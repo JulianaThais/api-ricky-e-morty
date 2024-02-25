@@ -1,0 +1,27 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-sm-3 col-6">
+            
+        <img src="{{profile.image}}" alt="{{profile.name}}"
+         class="img-fluid img-thumbnail" />
+
+        <h3 class="h5">Nome: {{profile.name}}</h3>
+        <h3 class="h5">Status: {{profile.status}}</h3>
+        <h3 class="h5">Espécie: {{profile.species}}</h3>
+        <h3 class="h5">Tipo: {{profile.type}}</h3>
+        <h3 class="h5">Gênero: {{profile.gender}}</h3>
+        <h3 class="h5">Origem: {{profile.origin.name}}</h3>
+        <h3 class="h5">URL: {{profile.origin.url}}</h3>
+        <h3 class="h5">Episódios participante: {{profile.episode}}</h3>
+        
+    </div>
+    
+</div>
+
+
+{% endblock  %}
+
+

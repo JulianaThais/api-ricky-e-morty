@@ -1,0 +1,24 @@
+
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+<div class="row">
+    {% for character in characters %}
+        <div class="col-sm-3 col-6">
+            <img src="{{character.image}}" alt="{{character.name}}"
+            class="img-fluid img-thumbnail" />
+
+            
+            <p>
+                <a href="/profile/{{character.id}}" class="link-dark">{{character.name}}</a>
+            </p>
+            </div>
+         {% endfor %}
+
+        
+        </div>
+    {% endblock  %}
+
+    
